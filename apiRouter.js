@@ -2,6 +2,7 @@ const express = require("express");
 var router = express.Router(); //viết hoa là 1 class
 
 router.get("/", (req, res) => {
+  req.user;
   res.json("router 1 user");
 });
 
